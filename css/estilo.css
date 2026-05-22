@@ -1,0 +1,169 @@
+/* ==========================================================================
+   RESET & ESTILOS GENERALES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fcf9f5; /* Fondo crema suave para una lectura cómoda */
+    color: #333333;
+}
+
+/* ==========================================================================
+   HEADER & NAVEGACIÓN
+   ========================================================================== */
+.site-header {
+    background-color: #2c1d11; /* Color chocolate oscuro */
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+.site-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.site-header p {
+    color: #dfb76c; /* Dorado gastronómico */
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Evita que se amontone en pantallas chicas */
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #dfb76c;
+    border-bottom: 2px solid #dfb76c;
+}
+
+/* ==========================================================================
+   ESTRUCTURA DE CONTENIDO
+   ========================================================================== */
+.recipe-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.recipe-section {
+    padding: 1rem 0;
+}
+
+.recipe-section h2 {
+    color: #2c1d11;
+    font-size: 2rem;
+    border-left: 5px solid #dfb76c;
+    padding-left: 10px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* Ficha de cada receta */
+.recipe-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-card h3 {
+    color: #8c2f1b; /* Tono rojizo para títulos de platos */
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================================================
+   IMÁGENES Y MULTIMEDIA (RESPONSIVO)
+   ========================================================================== */
+.recipe-media img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover; /* Mantiene proporción sin deformar */
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.recipe-video {
+    margin-top: 2rem;
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.recipe-video h4 {
+    margin-bottom: 1rem;
+    color: #2c1d11;
+}
+
+/* Adaptación mágica para los iframes de YouTube */
+.recipe-video iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Forzar la proporción panorámica */
+    border-radius: 4px;
+    border: none;
+}
+
+/* ==========================================================================
+   TEXTOS, LISTAS E INGREDIENTES
+   ========================================================================== */
+.recipe-info h4 {
+    color: #2c1d11;
+    margin: 1.5rem 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.recipe-info ul, 
+.recipe-info ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.recipe-info li {
+    margin-bottom: 0.5rem;
+}
+
+/* Separador elegante entre secciones */
+.divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #dfb76c, transparent);
+    margin: 3rem 0;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+    background-color: #1a110a;
+    color: #8c857e;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+}
